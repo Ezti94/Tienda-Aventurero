@@ -1,0 +1,139 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+
+    background-color: #1a1a1a;
+    border-bottom: 1px solid #c9a227;
+    position: relative;
+}
+
+.logo img {
+    height: 100px;
+    width: 160px;
+}
+
+
+a:hover {
+    color: #c9a227;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgba(255, 50, 50, 0.749);
+    background-color: #1a1a1a;
+    text-shadow: 2px 2px 4px black;
+    border: hidden;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin-left: auto;
+}
+
+.menu li a:hover {
+    color: #c9a227;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+a {
+    font-size: 1.5rem;
+    color: rgba(255, 50, 50, 0.749);
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--color-texto);
+    transition: var(--transicion-suave);
+}
+
+a:hover {
+    color: var(--color-dorado);
+}
+
+.hamburguesa {
+    display: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #f5f5f5;
+}
+.acciones-usuario{
+    display:flex;
+    gap:10px;
+    align-items:center;
+    margin-left:auto;
+}
+
+/*LOGIN */
+
+.btn-login{
+    padding:8px 16px;
+    border:2px solid #c9a227;
+    border-radius:6px;
+    color:#c9a227;
+    text-decoration:none;
+    font-size:1rem;
+    display:flex;
+    align-items:center;
+    gap:6px;
+    transition:0.3s ease;
+}
+
+.btn-login:hover{
+    background:#c9a227;
+    color:#111111;
+}
+
+/*REGISTER*/
+.btn-register{
+    padding:8px 16px;
+    border-radius:6px;
+    background:#c9a227;
+    color:#111111;
+    text-decoration:none;
+    font-size:1rem;
+    display:flex;
+    align-items:center;
+    gap:6px;
+    transition:0.3s ease;
+}
+
+.btn-register:hover{
+    background:#e0bb4c;
+}
+@media (max-width: 768px){
+
+    .hamburguesa{
+        display: block;
+    }
+
+    .menu{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        background-color: #111111;
+        border: 1px solid #c9a227;
+        padding: 20px;
+        gap: 15px;
+        border-radius: 10px;
+        z-index: 20;
+    }
+
+    .hamburguesa:hover + .menu{
+        display: flex;
+    }
+
+    .menu:hover{
+        display: flex;
+    }
+}
+
