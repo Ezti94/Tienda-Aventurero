@@ -9,6 +9,8 @@ La página representa una tienda ficticia de objetos mágicos, armas, reliquias 
 ## URL del proyecto
 
 El proyecto se encuentra publicado en el siguiente enlace:
+**https://ezti94.github.io/Tienda-Aventurero/**
+
 
 ---
 
